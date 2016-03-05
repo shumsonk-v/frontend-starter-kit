@@ -1,0 +1,17 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "funcscope": true,
+  "latedef": true,
+  "maxdepth": 6,
+  "maxerr": 80,
+  "maxparams": 7,
+  "nocomma": true,
+  "unused": true,
+  "predef": [ "window","document","angular","$","setTimeout","setInterval","console" ],
+  "globals": {
+    "jquery": true
+  }
+}
