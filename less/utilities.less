@@ -1,0 +1,518 @@
+@import "mixins.less";
+@import "variables";
+@import "colors";
+@import "animation-list";
+
+/* DISPLAY */
+.block {
+	.display(block);
+}
+.inline-block {
+	.display(inline-block);
+}
+.none, .hide, .hidden {
+	.display(none);
+}
+
+/* PADDING */
+.no-padd {
+	.padd(0);
+}
+.padd-vert(@value: 0) {
+	.padd-top(@value);
+	.padd-bottom(@value);
+}
+.padd-horz(@value: 0) {
+	.padd-left(@value);
+	.padd-right(@value);
+}
+.padd-xsml {
+	.padd(@XSML-SPC);
+}
+.padd-sml {
+	.padd(@SML-SPC);
+}
+.padd-med {
+	.padd(@MED-SPC);
+}
+.padd-xmed {
+	.padd(@XMED-SPC);
+}
+.padd-lg {
+	.padd(@LG-SPC);
+}
+.padd-xlg {
+	.padd(@XLG-SPC);
+}
+.padd-xxlg {
+	.padd(@XXLG-SPC);
+}
+.padd-left-xsml {
+	.padd-left(@XSML-SPC);
+}
+.padd-left-sml {
+	.padd-left(@SML-SPC);
+}
+.padd-left-med {
+	.padd-left(@MED-SPC);
+}
+.padd-left-xmed {
+	.padd-left(@XMED-SPC);
+}
+.padd-left-lg {
+	.padd-left(@LG-SPC);
+}
+.padd-left-xlg {
+	.padd-left(@XLG-SPC);
+}
+.padd-left-xxlg {
+	.padd-left(@XXLG-SPC);
+}
+.padd-right-xsml {
+	.padd-right(@XSML-SPC);
+}
+.padd-right-sml {
+	.padd-right(@SML-SPC);
+}
+.padd-right-med {
+	.padd-right(@MED-SPC);
+}
+.padd-right-xmed {
+	.padd-right(@XMED-SPC);
+}
+.padd-right-lg {
+	.padd-right(@LG-SPC);
+}
+.padd-right-xlg {
+	.padd-right(@XLG-SPC);
+}
+.padd-right-xxlg {
+	.padd-right(@XXLG-SPC);
+}
+.padd-top-xsml {
+	.padd-top(@XSML-SPC);
+}
+.padd-top-sml {
+	.padd-top(@SML-SPC);
+}
+.padd-top-med {
+	.padd-top(@MED-SPC);
+}
+.padd-top-xmed {
+	.padd-top(@XMED-SPC);
+}
+.padd-top-lg {
+	.padd-top(@LG-SPC);
+}
+.padd-top-xlg {
+	.padd-top(@XLG-SPC);
+}
+.padd-top-xxlg {
+	.padd-top(@XXLG-SPC);
+}
+.padd-bottom-xsml {
+	.padd-bottom(@XSML-SPC);
+}
+.padd-bottom-sml {
+	.padd-bottom(@SML-SPC);
+}
+.padd-bottom-med {
+	.padd-bottom(@MED-SPC);
+}
+.padd-bottom-xmed {
+	.padd-bottom(@XMED-SPC);
+}
+.padd-bottom-lg {
+	.padd-bottom(@LG-SPC);
+}
+.padd-bottom-xlg {
+	.padd-bottom(@XLG-SPC);
+}
+.padd-bottom-xxlg {
+	.padd-bottom(@XXLG-SPC);
+}
+.padd-vert-xsml {
+	.padd-vert(@XSML-SPC);
+}
+.padd-vert-sml {
+	.padd-vert(@SML-SPC);
+}
+.padd-vert-med {
+	.padd-vert(@MED-SPC);
+}
+.padd-vert-xmed {
+	.padd-vert(@XMED-SPC);
+}
+.padd-vert-lg {
+	.padd-vert(@LG-SPC);
+}
+.padd-vert-xlg {
+	.padd-vert(@XLG-SPC);
+}
+.padd-vert-xxlg {
+	.padd-vert(@XXLG-SPC);
+}
+.padd-horz-xsml {
+	.padd-left(@XSML-SPC);
+	.padd-right(@XSML-SPC);
+}
+.padd-horz-sml {
+	.padd-left(@SML-SPC);
+	.padd-right(@SML-SPC);
+}
+.padd-horz-med {
+	.padd-left(@MED-SPC);
+	.padd-right(@MED-SPC);
+}
+.padd-horz-xmed {
+	.padd-left(@XMED-SPC);
+	.padd-right(@XMED-SPC);
+}
+.padd-horz-lg {
+	.padd-left(@LG-SPC);
+	.padd-right(@LG-SPC);
+}
+.padd-horz-xlg {
+	.padd-left(@XLG-SPC);
+	.padd-right(@XLG-SPC);
+}
+.padd-horz-xxlg {
+	.padd-left(@XXLG-SPC);
+	.padd-right(@XXLG-SPC);
+}
+
+
+/* MARGIN */
+.mgn-xsml {
+	.mgn(@XSML-SPC);
+}
+.mgn-sml {
+	.mgn(@SML-SPC);
+}
+.mgn-med {
+	.mgn(@MED-SPC);
+}
+.mgn-xmed {
+	.mgn(@XMED-SPC);
+}
+.mgn-lg {
+	.mgn(@LG-SPC);
+}
+.mgn-xlg {
+	.mgn(@XLG-SPC);
+}
+.mgn-xxlg {
+	.mgn(@XXLG-SPC);
+}
+.mgn-left-xsml {
+	.mgn-left(@XSML-SPC);
+}
+.mgn-left-sml {
+	.mgn-left(@SML-SPC);
+}
+.mgn-left-med {
+	.mgn-left(@MED-SPC);
+}
+.mgn-left-xmed {
+	.mgn-left(@XMED-SPC);
+}
+.mgn-left-lg {
+	.mgn-left(@LG-SPC);
+}
+.mgn-left-xlg {
+	.mgn-left(@XLG-SPC);
+}
+.mgn-left-xxlg {
+	.mgn-left(@XXLG-SPC);
+}
+.mgn-right-xsml {
+	.mgn-right(@XSML-SPC);
+}
+.mgn-right-sml {
+	.mgn-right(@SML-SPC);
+}
+.mgn-right-med {
+	.mgn-right(@MED-SPC);
+}
+.mgn-right-xmed {
+	.mgn-right(@XMED-SPC);
+}
+.mgn-right-lg {
+	.mgn-right(@LG-SPC);
+}
+.mgn-right-xlg {
+	.mgn-right(@XLG-SPC);
+}
+.mgn-right-xxlg {
+	.mgn-right(@XXLG-SPC);
+}
+.mgn-top-xsml {
+	.mgn-top(@XSML-SPC);
+}
+.mgn-top-sml {
+	.mgn-top(@SML-SPC);
+}
+.mgn-top-med {
+	.mgn-top(@MED-SPC);
+}
+.mgn-top-xmed {
+	.mgn-top(@XMED-SPC);
+}
+.mgn-top-lg {
+	.mgn-top(@LG-SPC);
+}
+.mgn-top-xlg {
+	.mgn-top(@XLG-SPC);
+}
+.mgn-top-xxlg {
+	.mgn-top(@XXLG-SPC);
+}
+.mgn-bottom-xsml {
+	.mgn-bottom(@XSML-SPC);
+}
+.mgn-bottom-sml {
+	.mgn-bottom(@SML-SPC);
+}
+.mgn-bottom-med {
+	.mgn-bottom(@MED-SPC);
+}
+.mgn-bottom-xmed {
+	.mgn-bottom(@XMED-SPC);
+}
+.mgn-bottom-lg {
+	.mgn-bottom(@LG-SPC);
+}
+.mgn-bottom-xlg {
+	.mgn-bottom(@XLG-SPC);
+}
+.mgn-bottom-xxlg {
+	.mgn-bottom(@XXLG-SPC);
+}
+.mgn-vert(@size: auto) {
+	.mgn-top(@size);
+	.mgn-bottom(@size);
+}
+.mgn-vert-xsml {
+	.mgn-vert(@XSML-SPC);
+}
+.mgn-vert-sml {
+	.mgn-vert(@SML-SPC);
+}
+.mgn-vert-med {
+	.mgn-vert(@MED-SPC);
+}
+.mgn-vert-xmed {
+	.mgn-vert(@XMED-SPC);
+}
+.mgn-vert-lg {
+	.mgn-vert(@LG-SPC);
+}
+.mgn-vert-xlg {
+	.mgn-vert(@XLG-SPC);
+}
+.mgn-vert-xxlg {
+	.mgn-vert(@XXLG-SPC);
+}
+.mgn-horz(@size: auto) {
+	.mgn-left(@size);
+	.mgn-right(@size);
+}
+.mgn-horz-xsml {
+	.mgn-horz(@XSML-SPC);
+}
+.mgn-horz-sml {
+	.mgn-horz(@SML-SPC);
+}
+.mgn-horz-med {
+	.mgn-horz(@MED-SPC);
+}
+.mgn-horz-xmed {
+	.mgn-horz(@XMED-SPC);
+}
+.mgn-horz-lg {
+	.mgn-horz(@LG-SPC);
+}
+.mgn-horz-xlg {
+	.mgn-horz(@XLG-SPC);
+}
+.mgn-horz-xxlg {
+	.mgn-horz(@XXLG-SPC);
+}
+.no-mgn {
+	.mgn(0);
+}
+
+
+/* TEXT */
+.txt-center {
+	.txt-align(center);
+}
+.txt-left {
+	.txt-align(left);
+}
+.txt-right {
+	.txt-align(right);
+}
+.txt-justify {
+	.txt-align(justify);
+}
+.txt-truncate {
+	.wht-spc(nowrap);
+	.ovflow(hidden);
+	.txt-overflow(ellipsis);
+}
+.txt-bold {
+	.fnt-weight(bold);
+}
+.txt-no-underline {
+	.txt-decor(none);
+}
+.fnt-xsml {
+	.fnt-size(10pt);
+}
+.fnt-sml {
+	.fnt-size(11pt);
+}
+.fnt-med {
+	.fnt-size(12pt);
+}
+.fnt-xmed {
+	.fnt-size(14pt);
+}
+.fnt-lg {
+	.fnt-size(16pt);
+}
+.fnt-xlg {
+	.fnt-size(20pt);
+}
+.fnt-white, .txt-white {
+	.colr(#FFF) !important;
+}
+.fnt-italic, .txt-italic {
+	.fnt-style(italic);
+}
+.fnt-underline, .txt-underline {
+	.txt-decor(underline);
+}
+
+/* POSITIONING */
+.clearfix {
+	&:before, &:after {
+		.display(table);
+		.cont(" ");
+	}
+	&:after {
+		.clr(both);
+	}
+}
+.f-left {
+	.flt(left);
+}
+.f-right {
+	.flt(right);
+}
+.pos-tl(@top: auto, @left: auto) {
+	.t(@top);
+	.l(@left);
+}
+.pos-tr(@top: auto, @right: auto) {
+	.t(@top);
+	.r(@right);
+}
+.pos-bl(@bottom: auto, @left: auto) {
+	.b(@bottom);
+	.l(@left);
+}
+.pos-br(@bottom: auto, @right: auto) {
+	.b(@bottom);
+	.l(@right);
+}
+
+/*UTILITY*/
+.full-w {
+	.w(100%);
+}
+.pointer {
+	.csr(pointer);
+}
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.gradient-vert(@color1, @color2) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a4e96+0,131949+100 */
+	background: @color1; /* Old browsers */
+	background: -moz-linear-gradient(top,  @color1 0%, @color2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  @color1 0%,@color2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  @color1 0%,@color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='@{color1}', endColorstr='@{color2}',GradientType=0 )"; /* IE6-9 */
+}
+
+
+/* FLEX PROP */
+.flex-container-prop() {
+	/*Style as a container*/
+	.display(flex);
+	.jstfy-cont(flex-start);
+	.alg-item(stretch);
+	.alg-cont(flex-start);
+}
+.flex-column-container-prop() {
+	.flex-container-prop();
+	.flx-flow(column nowrap);
+}
+.flex-row-container-prop() {
+	.flex-container-prop();
+	.flx-flow(row nowrap);
+}
+.flex-child-prop(@grow: 1, @shrink: 0, @height: auto) {
+	.flx(@grow @shrink @height);
+}
+
+
+/* Font Weight */
+.fnt-thin() {
+	.fnt-weight(100);
+}
+.fnt-light() {
+	.fnt-weight(300);
+}
+.fnt-normal() {
+	.fnt-weight(400);
+}
+.fnt-medium() {
+	.fnt-weight(500);
+}
+.fnt-bold() {
+	.fnt-weight(700);
+}
+
+
+/* ANIMATION */
+.transtn-very-fast() {
+	.transtn(all .15s @EASE-OUT-ANIM);
+}
+.transtn-fast() {
+	.transtn(all .25s @EASE-OUT-ANIM);
+}
+.transtn-normal() {
+	.transtn(all .4s @EASE-OUT-ANIM);
+}
+.transtn-slow() {
+	.transtn(all .8s @EASE-OUT-ANIM);
+}
+
+
+/* VERTICAL ALIGNMENT */
+.valign-middle {
+	.valign(middle);
+}
+
+/* MISC */
+.bg-image-prop() {
+	.bg-repeat(no-repeat);
+	.bg-position(center);
+	.bg-size(cover);
+}
