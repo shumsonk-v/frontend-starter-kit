@@ -10,7 +10,7 @@ module.exports = {
         files: {
             'dist/styles.min.css': [
                 "less/compiled/_reset.css",
-                "node_modules/normalize.css/normalize.css"
+                "node_modules/normalize.css/normalize.css",
                 "less/compiled/utilities.css"
             ]
         }
