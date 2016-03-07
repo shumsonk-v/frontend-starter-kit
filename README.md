@@ -20,7 +20,7 @@ First, you need to install Node JS and Grunt. If you don't how, check [this](htt
 
 
 ### How's it work for javascript?
-1. The key task is **watch**. In the initialize config, if there is any change in javascript file in **scripts** folder (including sub-directories), grunt will perform **jshint** task first to check the javascript coding standard.
+1. The key task is **watch**. In the initialize config, if there is any change in javascript file in **scripts** folder (including sub-directories), grunt will perform **jshint** task first to check the javascript coding best practice (and you can change the JSHINT options in _.jshintrc_ file).
 
 2. After JSHint, the **concat** task to combine all those files (which were defined in **grunt/concat.js** at **src** property of **apps** property) into one file name *'apps.js'* and put it in **dist** folder temporary. 
 
