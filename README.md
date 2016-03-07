@@ -28,7 +28,7 @@ First, you need to install Node JS and Grunt. If you don't how, check [this](htt
 
 4. Finally, **apps.js** will be deleted automatically because it is no longer needed. The one you need for your production is **apps.min.js**.
 
-> Same concept goes for vendors (or third-party) libraries which is now defined to be put in **'vendors/js'** folder. The production version file name is **'vendors.min.js'**
+> For third-party libraries besides from **node_modules**, I've usually put them in **'vendors/js'** folder and config _concat_ and _uglify_ task to create a production version name is **vendors.min.js** and put it in the **dist** folder (same location as _apps.min.js_). You can change those settings if you want.
 
 **Note:** I have separated the minified version of application scripts and third-party scripts. It's good for me to development them separately because I usually not modify or touch the third-party code anyway. But if you want to combine them in one file, just change some grunt config.
 
