@@ -51,4 +51,6 @@ As I have mentioned about LESS. I already prepared some mixins and some utilitie
 > The order of the css files specified in **grunt/cssmin.js** might effect your stylesheet in your webpage. So you might want to check those files order before running grunt.
 
 
+And I also added **grunt_notify** task to show notification when any tasks has been performed. See [here](https://github.com/dylang/grunt-notify) for more info.
+
 Enjoy! Feel free to ask if you have any question, I will answer if I can.
